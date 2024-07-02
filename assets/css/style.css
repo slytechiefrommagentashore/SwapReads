@@ -3224,7 +3224,7 @@ body.dark-mode .pricing-card h3 {
   color: white;
 }
 .subscribe-btn {
-  background-color: (--chinese-violet);
+  background-color: var(--old-rose) !important;
   color: var(--white);
   width: 20rem;
 }
