@@ -484,7 +484,7 @@ hr {
 }
 
 .navbar.active {
-  max-height: 387px;
+  max-height: 500px;
   visibility: visible;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -495,7 +495,7 @@ hr {
 
 .navbar-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   /* Center align the navbar items */
   align-items: center;
   /* Vertically center the navbar items */
