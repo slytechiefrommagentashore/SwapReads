@@ -588,6 +588,21 @@ body {
       top: 17px;
       left: 350px;
     }
+    .menu-container {
+  max-height: 300px; /* Adjust based on your design */
+  overflow-y: auto;
+}
+    .hamb::-webkit-scrollbar {
+  width: 5px;
+}
+
+.hamb::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.hamb::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 }
 @media only screen and (max-width:990px){
   .header{
@@ -831,11 +846,11 @@ body {
             <div id="google_element"></div>
           </li> -->
         </ul>
-        <!-- <div class="hamburger">
+        <div class="hamburger">
           <div class="line"></div>
           <div class="line"></div>
           <div class="line"></div>
-        </div> -->
+        </div> 
       </nav>
       <div id="mobile_View_Menu">
         <span id="menu_lines"></span>
@@ -863,25 +878,25 @@ body {
       }
     </script>
     <script>
-      // const hamburger=document.querySelector('.hamburger');
-      // const head=document.querySelector('.header');
-      // const nav=document.querySelector('.nav');
-      // hamburger.addEventListener('click',()=>{
-      //   head.classList.toggle('nav-h');
-      //   nav.classList.toggle('vis-h');
-      // })
-      // let lastScrollTop = 0;
-      // function onScroll() {
-      //     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-      //     const header = document.querySelector('.header');
+     const hamburger=document.querySelector('.hamburger');
+       const head=document.querySelector('.header');
+       const nav=document.querySelector('.nav');
+       hamburger.addEventListener('click',()=>{
+         head.classList.toggle('nav-h');
+         nav.classList.toggle('vis-h');
+       })
+       let lastScrollTop = 0;
+       function onScroll() {
+           let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+           const header = document.querySelector('.header');
 
-      //     if (currentScroll > lastScrollTop) {
-      //         header.classList.add('hidden');
-      //     } else {
-      //         header.classList.remove('hidden');
-      //     }
-      //     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-      // }
+           if (currentScroll > lastScrollTop) {
+               header.classList.add('hidden');
+           } else {
+               header.classList.remove('hidden');
+           }
+           lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+       }
 
 
   window.addEventListener("scroll", onScroll);
@@ -2348,11 +2363,11 @@ body {
   <footer>
     <div class="foot-top">
       <div class="foot-left">
-
+  
         <div class="desc">
-<!--google translate-->
+  <!--google translate-->
           <div id="google_translate_element"></div>
-
+  
           <script type="text/javascript">
               function googleTranslateElementInit() {
                   new google.translate.TranslateElement(
@@ -2361,18 +2376,18 @@ body {
                   );
               }
           </script>
-
+  
           <script type="text/javascript"
                   src=
       "https://translate.google.com/translate_a/element.js?
       cb=googleTranslateElementInit">
           </script>
-          <div class="SwapReads"><a href="#" class="logo">SwapReads</a></div>
+          <div><a href="#" class="logo">SwapReads</a></div>
           <div>
             <p style="text-align: justify; " class="description">SwapReads.com is the ultimate destination for book
               lovers
               seeking to swap and
-
+  
               discover new literary gems.
               Connect with fellow enthusiasts, exchange your favorite reads, and embark on exciting new adventures in
               the
@@ -2380,7 +2395,7 @@ body {
               possibilities!
             </p>
           </div>
-
+  
         </div>
       </div>
       <div class="foot-middle">
@@ -2388,129 +2403,101 @@ body {
         <div id="quicklinks">
           <div>
           <ul>
-            <li class="foot-quick"><a href="#home" onclick="lenis.scrollTo('#home')">Home</a></li>
-            <li class="foot-quick"><a href="#benefits" onclick="lenis.scrollTo('#benefits')">Benefits</a></li>
-            <li class="foot-quick"><a href="#chapters" onclick="lenis.scrollTo('#chapters')">Literary Realms</a></li>
-            <li class="foot-quick"><a href="#pricing" onclick="lenis.scrollTo('#pricing')">Pricing</a></li>
-            <li class="foot-quick"><a href="./assets/html/bookrecommend.html"
+            <li class="foot-quick"><a href="index.html" onclick="lenis.scrollTo('#home')">Home</a></li>
+            <li class="foot-quick"><a href="../../index.html#benefits" onclick="lenis.scrollTo('#benefits')">Benefits</a></li>
+            <li class="foot-quick"><a href="../../index.html#chapters" onclick="lenis.scrollTo('#chapters')">Literary Realms</a></li>
+            <li class="foot-quick"><a href="../../index.html#pricing" onclick="lenis.scrollTo('#pricing')">Pricing</a></li>
+            <li class="foot-quick"><a href="book_recommend.html"
               onclick="lenis.scrollTo('#contact')">Recommended Book</a></li>
           </ul>
         </div>
         <div>
           <ul>
-            <li class="foot-quick"><a href="./assets/html/booklistswap.html" onclick="lenis.scrollTo('#contact')">Swap
+            <li class="foot-quick"><a href="addremovebook.html" >Swap
                 BookList</a></li>
-            <li class="foot-quick"><a href="./assets/html/freeBooks.html"
+            <li class="foot-quick"><a href="freeBooks.html"
                 onclick="lenis.scrollTo('#contact')">E-Book</a></li>
-            <li class="foot-quick"><a href="./assets/html/about.html" onclick="lenis.scrollTo('#contact')">About</a>
+            <li class="foot-quick"><a href="about.html" >About</a>
             </li>
-            <li class="foot-quick"><a href="#contact" onclick="lenis.scrollTo('#contact')">Contact Us</a></li>
-            <li class="foot-quick"><a href="#faqq" onclick="lenis.scrollTo('#faqq')">FAQ</a></li>
+            <li class="foot-quick"><a href="../../index.html#contact" onclick="lenis.scrollTo('#contact')">Contact Us</a></li>
+            <li class="foot-quick"><a href="../../index.html#faqq" onclick="lenis.scrollTo('#faqq')">FAQ</a></li>
           </ul>
         </div>
         </div>
       </div>
       <div class="social-icons">
-
+       
         <style>
-          .social-icons input[type="email"] 
-          {
+          .social-icons input[type="email"] {
               border: 2px solid #ccc; /* Gray border */
               border-radius: 4px; /* Rounded corners */
               padding: 10px; /* Inner padding */
               font-size: 16px; /* Font size */
           }
-          #confirmationMessage
-          {
-            margin-left: 50px;
-            font-size: 23px;
-            color: green;
-
-          }
-         /* for small screen */
-          @media (max-width: 768px) 
-          {
-            #confirmationMessage 
-            {
-                margin-left: 0;
-                text-align: center;
-                font-size: 18px;
+          #confirmationMessage{
+              margin-left: 50px;
+              font-size: 23px;
+              color: rgb(15, 15, 16);
             }
-        }
         </style>
-
-        <form id="newsletterForm" type="newsletter" onsubmit="return showConfirmationMessage()">
-          <label for="newsletter-email" class="newsletter-form">Subscribe to our Newsletter</label>
-          <div class="row-flex">
-              <!-- Email input -->
-              <input type="email" id="newsletter-email" name="email" placeholder="Email address"
-                      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\.com$"
-                      title="Please enter a valid email address that ends with '.com'" required>
-              <input type="submit" value="Subscribe" name="subscribe" class="subscribe-btn" id="subs_btn">
-          </div>
-      </form>
-     <div id="confirmationMessage" style="display: none;">Thank you for subscribing!</div>
-
-<script>
-  function showConfirmationMessage() 
-  {
-    // Show confirmation message
-    const confirmationMessage = document.getElementById('confirmationMessage');
-    confirmationMessage.innerHTML = "Thank you for subscribing!";
-    confirmationMessage.style.display = 'block';
-
-    // Reset the form after 3 seconds
-    setTimeout(function() 
-    {
-        document.getElementById('newsletterForm').reset();
-        confirmationMessage.style.display = 'none';
+  
+  <form type="newsletter" onsubmit="return showConfirmationMessage()">
+    <label for="newsletter-email" class="newsletter-form">Subscribe to our Newsletter</label>
+    <div class="row-flex">
+        <!-- Email input -->
+        <input type="email" id="newsletter-email" name="email" placeholder="Email address"
+               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\.com$"
+               title="Please enter a valid email address that ends with '.com'" required>
+        <input type="submit" value="Subscribe" name="subscribe" class="subscribe-btn" id="subs_btn">
+    </div>
+  </form>
+  <div id="confirmationMessage" style="display: none;">Thank you for subscribing!</div>
+  
+  <script>
+  function showConfirmationMessage() {
+    var confirmationMessage = document.getElementById("confirmationMessage");
+    confirmationMessage.style.display = "block";
+  
+    return false;
+  }
+  </script>
+      
         
-    }, 3000);
-
-    return false; 
-}
-</script>
-
-
-
         <div class="icons">
-          <a href="https://www.linkedin.com/in/anurag-verma-b91417253/" target="_blank">
+          <a href="https://www.linkedin.com/in/anurag-verma-b91417253/">
             <div class="icon">
               <i class="fab fa-linkedin" title="linkedin" style="cursor: pointer;"></i>
             </div>
           </a>
-
-          <a href="https://x.com/anuragverma_108" target="_blank">
+  
+          <a href="https://x.com/anuragverma_108">
             <div class="icon">
               <i class="fab fa-twitter" title="X"style="cursor: pointer;"></i>
             </div>
           </a>
-
+  
           <a href="#">
             <div class="icon">
               <i class="fab fa-instagram" title="Instagram"style="cursor: pointer;"></i>
             </div>
           </a>
-
-
-          <a href="https://www.youtube.com/@anuragbytes" target="_blank" title="YouTube">
+          
+  
+          <a href="https://www.youtube.com/@anuragbytes" title="YouTube">
             <div class="icon">
               <i class="fab fa-youtube" style="cursor: pointer;"></i>
             </div>
           </a>
-
-
-
+  
           <a href="">
             <div class="icon">
               <i class="fab fa-github" title="Github"></i>
             </div>
           </a>
          
-
         </div>
-
-
+       
+  
         <div id="back-to-top-container" onclick="lenis.scrollTo('#home')" class="right">
           <div class="circle1">
             <svg id="back-to-top" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -2520,13 +2507,13 @@ body {
             </svg>
           </div>
         </div>
-
+        
       </div>
     </div>
-
-
-
-
+  
+        
+  
+  
     <!-- adding privacy policy and copyright popup-->
     <div style="text-align: center; align-items: center;">
       <p style="text-align: center">
@@ -2534,13 +2521,13 @@ body {
         <script>document.write(new Date().getFullYear())</script> All Rights Reserved. Made with ❤ by Guardian Hackers.
       </p>
       <div class="row-copy">
-
-
+  
+  
       <a href="copyrightpolicy.html" id="copyrightPolicyLink">Copyright Policy</a> |
       <a href="privacynotice.html" id="privacyNoticeLink">Privacy Notice</a>
     </div>
     </div>
-
+    
     <!-- Copyright Policy Modal -->
     <!-- <div id="copyrightPolicyModal" class="modal">
       <div class="modal-content">
@@ -2556,7 +2543,7 @@ body {
         </ul>
       </div>
     </div> -->
-
+    
     <!-- Privacy Notice Modal -->
     <!-- <div id="privacyNoticeModal" class="modal">
       <div class="modal-content">
@@ -2572,29 +2559,29 @@ body {
           <li>By using our site, you consent to our privacy practices.</li>
         </ul>
       </div>
-    </div> -->
-
-    <!-- <script>
+    </div>
+    
+    <script>
       // Get the modal elements
       var copyrightModal = document.getElementById("copyrightPolicyModal");
       var privacyModal = document.getElementById("privacyNoticeModal");
-
+    
       // Get the link elements
       var copyrightLink = document.getElementById("copyrightPolicyLink");
       var privacyLink = document.getElementById("privacyNoticeLink");
-
+    
       // Get the <span> elements that close the modals
       var closeCopyright = document.getElementById("closeCopyright");
       var closePrivacy = document.getElementById("closePrivacy");
-
-      // When the user clicks the link, open the modal
+    
+      // When the user clicks the link, open the modal 
       copyrightLink.onclick = function() {
         copyrightModal.style.display = "block";
       }
       privacyLink.onclick = function() {
         privacyModal.style.display = "block";
       }
-
+    
       // When the user clicks on <span> (x), close the modal
       closeCopyright.onclick = function() {
         copyrightModal.style.display = "none";
@@ -2602,8 +2589,9 @@ body {
       closePrivacy.onclick = function() {
         privacyModal.style.display = "none";
       }
-
-      // When the user clicks anywhere outside of the modal, close it
+  </script> -->
+    
+      <!-- // When the user clicks anywhere outside of the modal, close it
       window.onclick = function(event) {
         if (event.target == copyrightModal) {
           copyrightModal.style.display = "none";
@@ -2613,9 +2601,6 @@ body {
         }
       }
     </script> -->
-
-
-
   </footer>
 
   <!-- Footer ended-->

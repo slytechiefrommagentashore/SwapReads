@@ -2362,7 +2362,12 @@ footer {
     max-width: 720px;
     /* border-radius:61px; */
   }
-
+  .navbar {
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 90vh; /* Example maximum height */
+    overflow-y: auto; /* Enables vertical scrolling */
+  }
   .grid-list {
     grid-template-columns: 1fr 1fr;
   }
