@@ -111,7 +111,7 @@ body > main > article > section.section.preview > div > p:nth-child(4) {
 
 .navbar-item {
   cursor: pointer;
-  padding: none;
+  padding: 0;
   font-size: 15px;
 }
 
@@ -660,16 +660,10 @@ body {
 }
 
 .navbar-list {
-  display: flex;
-  justify-content: center;
-  /* Center align the navbar items */
-  align-items: center;
-  /* Vertically center the navbar items */
-  margin: 0;
-  /* Remove default margin */
+  list-style-type: none;
+  display: flex;  /* Ensure the items are displayed inline */
   padding: 0;
-  /* Remove default padding */
-  height: 80px;
+  margin: 0;
 }
 
 .navbar-item {
